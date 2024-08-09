@@ -1,0 +1,8 @@
+package org.alumni.service;
+
+import org.alumni.model.LoginModel;
+
+public class LoginServiceImpl 
+{
+	public boolean isStudentregister(LoginModel lm)
+}

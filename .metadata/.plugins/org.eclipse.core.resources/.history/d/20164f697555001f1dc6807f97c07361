@@ -1,0 +1,5 @@
+package org.alumni.repository;
+
+public interface Loginrepository {
+
+}

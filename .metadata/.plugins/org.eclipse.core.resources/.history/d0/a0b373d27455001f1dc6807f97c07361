@@ -1,0 +1,10 @@
+package org.alumni.model;
+
+public class LoginModel 
+{
+	private int uid;
+	private String username;
+	private String password;
+	private String Email;
+	private String Contact;
+}

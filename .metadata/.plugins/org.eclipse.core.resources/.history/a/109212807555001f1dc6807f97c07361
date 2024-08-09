@@ -1,0 +1,9 @@
+package org.alumni.repository;
+
+public interface Loginrepository 
+{
+	public boolean isStudentregister(LoginModel lm)
+	{
+		
+	}
+}

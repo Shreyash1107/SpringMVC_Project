@@ -1,0 +1,22 @@
+package org.alumni.model;
+
+public class LoginModel 
+{
+	private int uid;
+	private String username;
+	private String password;
+	private String Email;
+	private String Contact;
+	public void setuid(int uid)
+	{
+		this.uid = uid;
+	}
+	public int getuid()
+	{
+		return uid;
+	}
+	public void setusername(String username)
+	{
+		this.username = username;
+	}
+}

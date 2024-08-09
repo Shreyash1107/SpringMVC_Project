@@ -1,0 +1,6 @@
+package org.alumni.model;
+
+public class LoginModel 
+{
+	
+}

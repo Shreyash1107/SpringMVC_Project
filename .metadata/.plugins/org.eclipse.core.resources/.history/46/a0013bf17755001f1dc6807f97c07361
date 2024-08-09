@@ -1,0 +1,5 @@
+package org.alumni.service;
+
+public class LoginServiceImpl {
+
+}

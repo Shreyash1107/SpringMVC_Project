@@ -1,0 +1,6 @@
+package org.alumni.config;
+Configuration
+public class DBConfig 
+{
+	
+}

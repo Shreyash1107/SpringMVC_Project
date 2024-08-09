@@ -1,0 +1,31 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link href="<c:url value="/resources/CSS/style.css" />" rel="stylesheet">
+</head>
+<body>
+<form>
+	<center>
+		<div class="wrapper">
+		<h3>Login Form</h3>
+			<div class="container">
+			 <i class="fas fa-user"></i>
+				<input type="text" name = "Username" value="" placeholder="Enter Username"><br><br>
+				<i class="fas fa-lock"></i>
+				<input type="password" name = "Password" value="" placeholder="Enter Password"><br><br>
+				<input type="submit" name = "log" value="Login"><br><br>
+			</div>
+			<div class="reference">
+				<strong>If you don't have an Account</strong><br><br>
+				<a href="reg">Register here</a>
+			</div>
+		</div>
+	</center>
+</form>
+</body>
+</html>
