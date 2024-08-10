@@ -20,8 +20,8 @@ public class DBConfig
 		return datasource;
 	}
 	@Bean(value="template")
-	public JdbcTemplate template(DriverManagerDataSource datasource)
+	public JdbcTemplate template()
 	{
-		return new JdbcTemplate(datasource);
+		return new JdbcTemplate(getdatasource());
 	}
 }

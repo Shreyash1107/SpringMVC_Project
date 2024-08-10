@@ -1,6 +1,5 @@
 package org.alumni.model;
 
-import org.springframework.stereotype.Component;
 
 public class LoginModel 
 {

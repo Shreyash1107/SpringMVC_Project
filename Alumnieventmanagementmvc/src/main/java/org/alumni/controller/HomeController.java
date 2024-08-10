@@ -50,7 +50,7 @@ public class HomeController
 			}
 			else
 			{
-				return "index.jsp";
+				return "index";
 			}
 		}
 }

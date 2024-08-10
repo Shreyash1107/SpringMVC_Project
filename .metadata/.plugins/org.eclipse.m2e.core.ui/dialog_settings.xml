@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="First"/>
 			<item value="Alumnieventmanagementmvc"/>
 			<item value="Alumnieventmanagement"/>
 			<item value="Alumnimanagement"/>
@@ -9,6 +10,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="First"/>
 			<item value="Alumnieventmanagementmvc"/>
 			<item value="Alumnieventmanagement"/>
 			<item value="Alumnimanagement"/>
@@ -31,8 +33,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="D:\MVC Project\Alumnieventmanagement"/>
 			<item value="D:\MVC Project"/>
+			<item value="D:\MVC Project\Alumnieventmanagement"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,13 +58,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.techhub.Alumnimanagementproject"/>
 		</list>
 		<list key="groupId">
-			<item value="org.techhub"/>
 		</list>
 		<list key="artifactId">
-			<item value="Alumnimanagementproject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
