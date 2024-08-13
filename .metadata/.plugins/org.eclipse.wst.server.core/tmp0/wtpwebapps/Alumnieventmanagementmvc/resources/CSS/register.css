@@ -5,6 +5,12 @@
 	margin:0;
 	box-sizing: border-box;
 }
+body
+{
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);
+	background: linear-gradient(to right, #240b36, #c31432); 
+	overflow: hidden;
+}
 .box
 {
 	width: 400px;

@@ -19,38 +19,51 @@
 	integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
 	crossorigin="anonymous"></script>
 <link href="<c:url value='/resources/CSS/home.css' />" rel="stylesheet" />
+<script src="<c:url value='/resources/JS/home.js' />"></script>
+<style type="text/css">
+.mycls {
+	background-color:  #c31432;/* fallback for old browsers */
+	 background: -webkit-linear-(to right, #240b36, #c31432);
+	background: linear-gradient(to right, #240b36, #c31432);
+	overflow: hidden; 
+}
+</style>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid mycls" style="background-color: red">
 		<div class="row">
-			<div class="sidebar">
-				<h4 class="text-center">Menu</h4>
+			<!-- Sidebar -->
+			<div class="col-md-3 sidebar">
+				<h4 class="text-center">Modules</h4>
 				<div class="nav flex-column nav-pills menubar" id="v-pills-tab"
 					role="tablist" aria-orientation="vertical">
-					<a class="nav-link text-white mb-2 active" href="#">Batch Master</a>
-					<a class="nav-link text-white mb-2" href="#">Alumni Master</a>
-					<a class="nav-link text-white mb-2" href="#">Event Master</a>
-					<a class="nav-link text-white mb-2" href="#">Attendance Master</a>
-					<a class="nav-link text-white mb-2" href="#">Feedback Master</a>
-					<a class="nav-link text-white mb-2" href="#">Settings</a>
+					<a class="nav-link text-white mb-2" href="batch">Batch Master</a> <a
+						class="nav-link text-white mb-2" href="alumni">Alumni Master</a> <a
+						class="nav-link text-white mb-2" href="#">Event Master</a> <a
+						class="nav-link text-white mb-2" href="#">Attendance Master</a> <a
+						class="nav-link text-white mb-2" href="#">Feedback Master</a> <a
+						class="nav-link text-white mb-2" href="#">Settings</a>
 				</div>
 			</div>
-			<div class="content">
+			<!-- Content Area -->
+			<div class="col-md-9 content">
 				<c:if test="${not empty msg}">
-				    <div class="alert alert-success">
-				        ${msg}
-				    </div>
+					<div class="alert alert-success">${msg}</div>
 				</c:if>
-				<div class="form-container shadow p-4 mb-5 bg-white rounded">
-					<h3 class="text-center mb-4">Add New Batch</h3>
-					<form name='frm' id="frm" action='add' method='POST' onsubmit="validateName()">
+				<div class="form-container shadow p-4 mb-5 rounded">
+					<h5 class="text-center mb-4">Add Batch Details</h5>
+					<form name='frm' id="frm" action='add' method='POST'
+						onsubmit="validateName()">
 						<div class="form-group">
-							<label for="txtBatch" class="font-weight-bold">Batch Name</label>
-							<input type="text" name="batchyear" id="txtBatch" class="form-control" placeholder="Enter Batch Name" onkeyup="validateBatch()" autocomplete="off">
-							<small id="s" class="form-text text-muted"></small>
+							<input type="text" name="batchyear" id="txtBatch"
+								class="form-control" placeholder="Enter Passout Year"
+								onkeyup="validateBatch()" autocomplete="off"> <small
+								id="s" class="form-text text-muted"></small>
 						</div>
 						<div class="form-group d-flex justify-content-center">
-							<input type='submit' name='s' id="btn" value='Add New Batch' class="btn btn-primary px-5 py-2 font-weight-bold" />
+							<input type='submit' name='s' id="btn" value='Add New Batch'
+								class="btn btn-primary px-5 py-2 font-weight-bold"
+								style="margin-top: 20px" />
 						</div>
 					</form>
 				</div>

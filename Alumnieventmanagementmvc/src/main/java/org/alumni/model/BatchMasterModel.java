@@ -20,4 +20,12 @@ public class BatchMasterModel
 	{
 		return batch_year;
 	}
+	@Override
+	public String toString() {
+		return "BatchMasterModel [bid=" + bid + ", batch_year=" + batch_year + "]";
+	}
+	public BatchMasterModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 }
